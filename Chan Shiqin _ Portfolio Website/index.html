@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chan Shiqin - Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121c2b;
+            color: #BFC9D9;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #00BFFF, #BFC9D9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .skill-chip {
+            background: rgba(191, 201, 217, 0.1);
+            border: 1px solid rgba(191, 201, 217, 0.2);
+            transition: all 0.3s ease;
+        }
+        .skill-chip:hover {
+            background: rgba(191, 201, 217, 0.2);
+            transform: translateY(-2px);
+        }
+        .hero-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(191, 201, 217, 0.1) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Loading Animation -->
+    <div class="loading-animation"></div>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="fixed top-0 left-0 w-full z-50 bg-opacity-90 backdrop-blur-md bg-[#0a0a0a] transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="text-xl font-bold text-white">Chan Shiqin</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden hero-pattern">
+        <div class="container mx-auto px-4 py-20 text-center" data-aos="fade-up">
+            <p class="text-xl md:text-2xl mb-2 text-gray-300 fade-in-section">Hello, it's me</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 text-white hero-text">Chan Shiqin</h1>
+            <p class="text-xl md:text-2xl mb-6 text-gray-300 fade-in-section">And I'm <span class="text-white font-semibold">Fresh Graduate</span> in <span class="gradient-text">Software Systems Development @ TARUMT</span></p>
+            <p class="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto fade-in-section">
+                A passionate software developer focused on creating innovative digital solutions.
+            </p>
+            <div class="flex gap-4 justify-center fade-in-section">
+                <a href="#portfolio" class="btn-primary">View Projects</a>
+                <a href="#" class="btn-secondary">Download Resume</a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-2xl text-white"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative bg-[#0a0a0a] z-10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-white section-title" data-aos="fade-right">About Me</h2>
+            
+            <!-- About Description -->
+            <div class="mb-12" data-aos="fade-up">
+                <p class="text-lg mb-6 text-gray-300">
+                    I'm a friendly software developer who loves creating web and mobile apps. 
+                    I enjoy solving problems in creative ways and building things that make a difference 
+                    in people's lives. When I'm not coding, you might find me exploring new technologies 
+                    or working on personal projects.
+                </p>
+            </div>
+            
+            <!-- Education & Experience Grid -->
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <!-- Education -->
+                <div data-aos="fade-right">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Education</h3>
+                    <div class="bg-[#1a1a1a] p-4 rounded-lg border border-gray-800">
+                        <p class="font-medium text-white">TARUMT</p>
+                        <p class="text-gray-400">Bachelor of Information Technology (Honours) in Software Systems Development</p>
+                        <p class="text-gray-400 text-sm mt-1">2022 - 2025</p>
+                    </div>
+                </div>
+                
+                <!-- Work Experience -->
+                <div data-aos="fade-left">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Work Experience</h3>
+                    
+                    <div class="bg-[#1a1a1a] p-4 rounded-lg border border-gray-800 mb-4">
+                        <p class="font-medium text-white">FLEXI FREIGHT SDN. BHD</p>
+                        <p class="text-gray-400">Software Developer Intern</p>
+                        <p class="text-gray-400 text-sm mt-1">Feb 2024 - Aug 2024</p>
+                    </div>
+                    
+                    <div class="bg-[#1a1a1a] p-4 rounded-lg border border-gray-800">
+                        <p class="font-medium text-white">Casbay Sdn. Bhd.</p>
+                        <p class="text-gray-400">Software Developer Intern</p>
+                        <p class="text-gray-400 text-sm mt-1">Oct 2021 - Jan 2022</p>
+                        <p class="text-gray-400 text-sm">Penang, Malaysia</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skills Section -->
+            <div data-aos="fade-up">
+                <h3 class="text-xl font-semibold mb-4 text-white">Skills & Technologies</h3>
+                <div class="flex flex-wrap gap-2">
+                    <div class="skill-chip px-3 py-1 rounded-lg text-sm">HTML, CSS</div>
+                    <div class="skill-chip px-3 py-1 rounded-lg text-sm">C Language</div>
+                    <div class="skill-chip px-3 py-1 rounded-lg text-sm">Kotlin</div>
+                    <div class="skill-chip px-3 py-1 rounded-lg text-sm">PHP</div>
+                    <div class="skill-chip px-3 py-1 rounded-lg text-sm">C#</div>
+                    <div class="skill-chip px-3 py-1 rounded-lg text-sm">Java</div>
+                    <div class="skill-chip px-3 py-1 rounded-lg text-sm">Firebase</div>
+                    <div class="skill-chip px-3 py-1 rounded-lg text-sm">MySQL</div>
+                    <div class="skill-chip px-3 py-1 rounded-lg text-sm">WordPress</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 hero-pattern">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white section-title" data-aos="fade-right">My Projects</h2>
+            <div class="project-card" data-aos="fade-up">
+                <div class="p-6 md:p-8">
+                    <h3 class="text-2xl font-bold mb-4 text-white">AR Home Decoration Application</h3>
+                    <p class="text-gray-400 mb-6">
+                        An innovative Android application built with Kotlin and Firebase that allows users to preview furniture in augmented reality. 
+                        Features a comprehensive admin management system developed in PHP.
+                    </p>
+                    <div class="aspect-video bg-[#0a0a0a] rounded-lg mb-6 flex items-center justify-center border border-gray-800 overflow-hidden">
+                        <!-- Google Drive Video Embed -->
+                        <iframe 
+                            class="w-full h-full"
+                            src="https://drive.google.com/file/d/1HLUn4Pr0hQBhfMBMS0wn1cdp5a_A-4It/preview" 
+                            title="AR Home Decoration Application Demo"
+                            frameborder="0" 
+                            allow="autoplay; encrypted-media" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <a href="https://github.com/ChanShiqin/ARHomeDecoration" class="btn-primary inline-flex items-center gap-2" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        View Source Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 hero-pattern">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white section-title text-center" data-aos="fade-up">Let's Connect</h2>
+            <div class="flex justify-center gap-6" data-aos="fade-up" data-aos-delay="200">
+                <!-- <a href="#" class="social-link p-4">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a> -->
+                <a href="https://www.linkedin.com/in/shiqin-chan-887637340/" class="social-link p-4" target="_blank">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>                
+                <a href="https://github.com/ChanShiqin" class="social-link p-4">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="mailto:chanshiqin01@gmail.com" class="social-link p-4">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
+                <a href="https://wa.me/60124680790" class="social-link p-4" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-[#0a0a0a] border-t border-gray-800">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p>&copy; 2024 Chan Shiqin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
